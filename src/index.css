@@ -1,0 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Gravitas+One&display=swap');
+@import "tailwindcss";
+
+@theme{
+    --font-Gravitas: 'Gravitas One', cursive;
+}
