@@ -8,6 +8,7 @@ import CastSkeleton from "../skeleton/CastSkeleton";
 import Cast from "../components/Cast";
 import LoadProduction from "../components/LoadProduction";
 import SimilarMovies from "../components/SimilarMovies";
+import Icon from "../components/Icons";
 
 function MovieDetails() {
   // hooks
@@ -210,39 +211,13 @@ function MovieDetails() {
               <div className="mt-4">
                 {/* Runtime */}
                 <div className="flex items-center gap-2 text-sm text-gray-300 mb-1">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth={1.5}
-                    stroke="currentColor"
-                    className="w-5 h-5"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
-                    />
-                  </svg>
+                  <Icon name="clock" />
                   <span>{movie.runtime} min</span>
                 </div>
 
                 {/* Languages */}
                 <div className="flex items-center gap-2 text-sm text-gray-300">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth={1.5}
-                    stroke="currentColor"
-                    className="w-5 h-5"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M3 5h18M3 12h18M3 19h18"
-                    />
-                  </svg>
+                  <Icon name="menu" />
                   <span>
                     {movie.spoken_languages
                       ?.map((lang) => lang.english_name)
@@ -318,7 +293,7 @@ function MovieDetails() {
           <LoadProduction director={director} companies={companies} />
         </div>
         <div>
-          <SimilarMovies similarMovies={similarMovies}/>
+          <SimilarMovies similarMovies={similarMovies} />
         </div>
       </div>
     </>
