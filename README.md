@@ -3,6 +3,7 @@
 CineVault is a TMDB-powered movie discovery web application that allows users to search, explore, and filter movies with a smooth and responsive user experience.
 
 🔗 **Live Demo:** https://cinevault-xi.vercel.app
+(use a vpn if you are from India,because TMDB doesn't support in Indian server)
 
 ---
 
